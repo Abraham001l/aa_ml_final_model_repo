@@ -1,0 +1,584 @@
+{
+  "route_family": {
+    "passed": true,
+    "adversarial_checks": 36,
+    "positive_controls": 4,
+    "config": {
+      "family": "route recovery",
+      "window": 3,
+      "recent": 0.7,
+      "recovery": 12.0,
+      "pool": 0.25
+    },
+    "checks": [
+      {
+        "origin": "2021-07",
+        "variant": "huge",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "zero",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "random",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "nan",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "negative",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "infinite",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "drop_future",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "future_reverse",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "row_order",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "huge",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "zero",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "random",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "nan",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "negative",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "infinite",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "drop_future",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "future_reverse",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "row_order",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "huge",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "zero",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "random",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "nan",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "negative",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "infinite",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "drop_future",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "future_reverse",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "row_order",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "huge",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "zero",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "random",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "nan",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "negative",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "infinite",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "drop_future",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "future_reverse",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "row_order",
+        "passed": true
+      }
+    ]
+  },
+  "network_family": {
+    "passed": true,
+    "adversarial_checks": 36,
+    "positive_controls": 4,
+    "config": {
+      "family": "network recovery",
+      "window": 3,
+      "recent": 0.7,
+      "recovery": 0.5,
+      "pool": 0.25
+    },
+    "checks": [
+      {
+        "origin": "2021-07",
+        "variant": "huge",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "zero",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "random",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "nan",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "negative",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "infinite",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "drop_future",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "future_reverse",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "row_order",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "huge",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "zero",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "random",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "nan",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "negative",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "infinite",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "drop_future",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "future_reverse",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "row_order",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "huge",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "zero",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "random",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "nan",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "negative",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "infinite",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "drop_future",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "future_reverse",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "row_order",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "huge",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "zero",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "random",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "nan",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "negative",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "infinite",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "drop_future",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "future_reverse",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "row_order",
+        "passed": true
+      }
+    ]
+  },
+  "selected": {
+    "passed": true,
+    "adversarial_checks": 36,
+    "positive_controls": 4,
+    "config": {
+      "family": "route recovery",
+      "window": 3,
+      "recent": 0.7,
+      "recovery": 12.0,
+      "pool": 0.25
+    },
+    "checks": [
+      {
+        "origin": "2021-07",
+        "variant": "huge",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "zero",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "random",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "nan",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "negative",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "infinite",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "drop_future",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "future_reverse",
+        "passed": true
+      },
+      {
+        "origin": "2021-07",
+        "variant": "row_order",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "huge",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "zero",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "random",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "nan",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "negative",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "infinite",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "drop_future",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "future_reverse",
+        "passed": true
+      },
+      {
+        "origin": "2022-01",
+        "variant": "row_order",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "huge",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "zero",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "random",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "nan",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "negative",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "infinite",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "drop_future",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "future_reverse",
+        "passed": true
+      },
+      {
+        "origin": "2022-07",
+        "variant": "row_order",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "huge",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "zero",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "random",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "nan",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "negative",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "infinite",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "drop_future",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "future_reverse",
+        "passed": true
+      },
+      {
+        "origin": "2024-07",
+        "variant": "row_order",
+        "passed": true
+      }
+    ]
+  }
+}

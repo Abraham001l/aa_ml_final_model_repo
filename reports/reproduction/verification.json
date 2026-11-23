@@ -1,0 +1,14 @@
+{
+  "verified_date": "2026-11-22",
+  "canonical_prediction_count": 410856,
+  "predictions_exactly_equal": true,
+  "maximum_absolute_prediction_difference": 0.0,
+  "configuration_count": 198,
+  "development_loss_count": 594,
+  "full_test_wape": 0.17341753957268646,
+  "reference_checks": "settings, three fold WAPEs and all three final-window metric suites match",
+  "data_distributed": false,
+  "raw_or_route_level_predictions_distributed": false,
+  "all_594_real_development_losses_ignore_final_targets": true,
+  "selected_parameters_ignore_final_targets": true
+}

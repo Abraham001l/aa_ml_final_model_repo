@@ -1,0 +1,21 @@
+{
+  "package_version": "1.0.0",
+  "python": "3.14.2",
+  "numpy": "2.4.3",
+  "pandas": "2.3.3",
+  "command": "evaluate",
+  "input_filename": "pax_forecasting.csv",
+  "input_sha256": "046a7ac6e7b66200be426e317637a4463244ca85c5bda6282f759d8979cd841f",
+  "config": {
+    "family": "route recovery",
+    "window": 3,
+    "recent": 0.7,
+    "recovery": 12.0,
+    "pool": 0.25
+  },
+  "origin": "2024-07",
+  "target_start": "2024-08",
+  "target_end": "2026-07",
+  "historical_routes": 17119,
+  "evaluation_status": "Historical, previously inspected project window"
+}

@@ -1,0 +1,7 @@
+{
+  "family": "route recovery",
+  "window": 3,
+  "recent": 0.7,
+  "recovery": 12.0,
+  "pool": 0.25
+}
