@@ -234,7 +234,7 @@ For the selected window $w=3$, let $C$ contain the latest three observed calenda
 months (May–July 2024 at the final origin). Define
 
 $$O_i=\sum_{t\in C}d_{i,t},\qquad E_i=\sum_{t\in C}b_{i,m(t)},$$
-$$r_i=\operatorname{clip}\left(\frac{O_i+2}{E_i+2},0.05,8\right).$$
+$$r_i=\mathrm{clip}\left(\frac{O_i+2}{E_i+2},0.05,8\right).$$
 
 This is one ratio per route, computed from **sums of monthly daily rates**. It is
 neither a mean of monthly ratios nor a comparison of all 12 months. The fixed
@@ -243,7 +243,7 @@ add-2 smoothing limits thin-route instability. It is not a fitted Laplace model.
 The pooled network comparison and shared recovery weight are
 
 $$R=\frac{\sum_i O_i}{\sum_i E_i},\qquad
-g=\operatorname{clip}\left(\frac{1.06-R}{0.20},0,1\right).$$
+g=\mathrm{clip}\left(\frac{1.06-R}{0.20},0,1\right).$$
 
 The network ratio has **no add-2 smoothing**. It pools traffic rather than giving
 equal weight to each route ratio. The recovery weight is 1 at or below 86% of 2019,
@@ -263,7 +263,7 @@ When $g<1$, even its infinite-horizon limit need not equal 1.
 
 The recent path is
 
-$$F_i=\operatorname{clip}\left(\frac{O_i+2}{\sum_{t\in C}\ell_{i,m(t)}+2},0.5,2\right),
+$$F_i=\mathrm{clip}\left(\frac{O_i+2}{\sum_{t\in C}\ell_{i,m(t)}+2},0.5,2\right),
 \qquad A_{i,h}=\ell_{i,m(h)}F_i.$$
 
 In this implementation the window is contained in the latest observed year,
@@ -276,8 +276,8 @@ With selected recent weight $\rho=0.70$, define recent-season trust and
 structural share:
 
 $$v=\rho(1-g),\qquad
-s_i=\min\left(1,\frac{\operatorname{mean}_{m}(b_{i,m})}
-{\max[0.25\operatorname{mean}_{m}(\ell_{i,m}),0.1]}\right),$$
+s_i=\min\left(1,\frac{\mathrm{mean}_{m}(b_{i,m})}
+{\max[0.25\mathrm{mean}_{m}(\ell_{i,m}),0.1]}\right),$$
 $$q_i=(1-v)s_i,\qquad
 \widehat y^{\rm own}_{i,h}=D_h[q_iB_{i,h}+(1-q_i)A_{i,h}].$$
 
@@ -301,7 +301,7 @@ u^k_{i,m}=\frac{P^k_{i,m}+100a_i}{P^k_{\bar i,m}+100},\quad k\in\{19,last\}.$$
 The fixed 100-passenger smoothing pulls thin monthly directional ratios toward
 the smoothed annual directional ratio. It is not a fitted empirical-Bayes prior.
 
-$$M_{i,h}=\operatorname{clip}\left(\sqrt{u^{19}_{i,m(h)}u^{last}_{i,m(h)}},0.25,4\right),$$
+$$M_{i,h}=\mathrm{clip}\left(\sqrt{u^{19}_{i,m(h)}u^{last}_{i,m(h)}},0.25,4\right),$$
 $$\widehat y^{\rm reverse}_{i,h}=M_{i,h}\widehat y^{\rm own}_{\bar i,h},$$
 $$\boxed{\widehat y_{i,h}=0.75\widehat y^{\rm own}_{i,h}
 +0.25\widehat y^{\rm reverse}_{i,h}}.$$
@@ -330,10 +330,10 @@ For all scored route-month observations $j$:
 
 $$\mathrm{WAPE}=\frac{\sum_j|y_j-\hat y_j|}{\sum_j y_j},\quad
 \mathrm{Bias}=\frac{\sum_j(\hat y_j-y_j)}{\sum_j y_j},$$
-$$\mathrm{MAE}=\operatorname{mean}|y-\hat y|,\quad
-\mathrm{RMSE}=\sqrt{\operatorname{mean}(y-\hat y)^2},$$
-$$\mathrm{sMAPE}=\operatorname{mean}\frac{2|y-\hat y|}{|y|+|\hat y|},\quad
-\mathrm{RMSLE}=\sqrt{\operatorname{mean}[\log(1+\hat y)-\log(1+y)]^2}.$$
+$$\mathrm{MAE}=\mathrm{mean}|y-\hat y|,\quad
+\mathrm{RMSE}=\sqrt{\mathrm{mean}(y-\hat y)^2},$$
+$$\mathrm{sMAPE}=\mathrm{mean}\frac{2|y-\hat y|}{|y|+|\hat y|},\quad
+\mathrm{RMSLE}=\sqrt{\mathrm{mean}[\log(1+\hat y)-\log(1+y)]^2}.$$
 
 Both-zero sMAPE terms are zero. WAPE and bias are `null` when actual volume is
 zero, rather than JSON NaN. All nonzero-target definitions match the shared
